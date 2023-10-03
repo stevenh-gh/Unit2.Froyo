@@ -17,3 +17,9 @@ const countFlavors = (flavors) => {
     return froyoFlavors;
 }
 
+const logResult = (froyoFlavors) => {
+    for (let flavor in froyoFlavors) {
+        console.log(`Customer has ordered ${froyoFlavors[flavor]} ${flavor}${froyoFlavors[flavor] === 1 ? '' : 's'}`);
+    }
+}
+
