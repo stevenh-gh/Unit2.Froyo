@@ -4,3 +4,16 @@ const getFlavorsFromUser = () => {
 
 }
 
+const countFlavors = (flavors) => {
+    const froyoFlavors = {};
+    for (let flavor of flavors) {
+        if (froyoFlavors[flavor] === undefined) {
+            froyoFlavors[flavor] = 1;
+        } else {
+            froyoFlavors[flavor]++;
+        }
+    }
+
+    return froyoFlavors;
+}
+
