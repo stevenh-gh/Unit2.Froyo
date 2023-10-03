@@ -23,3 +23,6 @@ const logResult = (froyoFlavors) => {
     }
 }
 
+const flavorsFromUser = getFlavorsFromUser();
+const froyoFlavors = countFlavors(flavorsFromUser);
+logResult(froyoFlavors);
